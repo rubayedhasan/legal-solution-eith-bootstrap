@@ -1,0 +1,22 @@
+/* google font import link  */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* styles for all */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* common styles  */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "EB Garamond", serif;
+  font-family: "Poppins", sans-serif;
+}
