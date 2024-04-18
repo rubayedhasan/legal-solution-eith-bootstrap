@@ -16,7 +16,63 @@ a {
 li {
   list-style: none;
 }
-body {
+.font-eb-garamond {
   font-family: "EB Garamond", serif;
+}
+body {
   font-family: "Poppins", sans-serif;
+}
+
+/* header section styles  */
+header {
+  margin-top: 20px;
+}
+
+nav .navbar-brand span {
+  font-size: 35px;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  color: #707070;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+  color: #000;
+}
+nav .own-btn-bg {
+  background-color: #b68c5a;
+}
+nav .own-btn-bg:hover {
+  color: #d8d6d6;
+  background-color: #6e522e;
+}
+
+/* responsive setyles  */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav .navbar-nav .nav-item .nav-link:hover {
+    color: #000;
+    font-size: 18px;
+    border: 1px solid #707070;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
