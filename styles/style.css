@@ -74,16 +74,51 @@ nav .navbar-nav .nav-item .nav-link:hover {
   padding: 12px 30px;
 }
 
+/* practice-area section styles  */
+#practice-area {
+  margin-top: 100px;
+}
+#practice-area .card-areas {
+  margin-top: 60px;
+}
+#practice-area .card-areas .card {
+  transition: all 0.4s;
+}
+#practice-area .card-areas .card:hover {
+  background-color: #e7e7e7;
+}
+#practice-area .card-areas .card img {
+  width: 50px;
+  height: 50px;
+}
+
 /* responsive styles  */
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .own-input-w {
+    width: 100%;
+    display: block;
+  }
+  .section-title {
+    font-size: 28px;
+  }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #banner {
+    min-height: 280px;
+  }
+
+  .own-input-w {
+    width: 400px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -96,22 +131,15 @@ nav .navbar-nav .nav-item .nav-link:hover {
   .own-input-w {
     max-width: 550px;
   }
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #banner {
-    min-height: 280px;
-  }
-
-  .own-input-w {
-    width: 400px;
+  .section-title {
+    font-size: 40px;
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .own-input-w {
-    width: 100%;
-    display: block;
-  }
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
