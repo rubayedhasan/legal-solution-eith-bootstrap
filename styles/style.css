@@ -16,11 +16,21 @@ a {
 li {
   list-style: none;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* customize classes  */
 .font-eb-garamond {
   font-family: "EB Garamond", serif;
 }
-body {
-  font-family: "Poppins", sans-serif;
+.own-btn-bg {
+  font-size: 18px;
+  background-color: #b68c5a;
+}
+.own-btn-bg:hover {
+  color: #d8d6d6;
+  background-color: #6e522e;
 }
 
 /* header section styles  */
@@ -40,26 +50,41 @@ nav .navbar-nav .nav-item .nav-link {
 nav .navbar-nav .nav-item .nav-link:hover {
   color: #000;
 }
-nav .own-btn-bg {
-  background-color: #b68c5a;
-}
-nav .own-btn-bg:hover {
-  color: #d8d6d6;
-  background-color: #6e522e;
+
+/* banner section styles  */
+#banner {
+  margin-top: 50px;
+  height: 70vh;
+  min-height: 550px;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  padding: 20px;
 }
 
-/* responsive setyles  */
+#banner form .own-btn-bg {
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+/* responsive styles  */
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   nav .navbar-nav .nav-item .nav-link:hover {
@@ -67,12 +92,26 @@ nav .own-btn-bg:hover {
     font-size: 18px;
     border: 1px solid #707070;
   }
+
+  .own-input-w {
+    max-width: 550px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #banner {
+    min-height: 280px;
+  }
+
+  .own-input-w {
+    width: 400px;
+  }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .own-input-w {
+    width: 100%;
+    display: block;
+  }
 }
